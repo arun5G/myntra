@@ -1,0 +1,26 @@
+body{
+    background-color:#f67396 ;
+}
+
+#accountpage{
+    width: 400px;
+    border: 1px solid red;
+    margin: auto;
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+}
+img{
+    width: 100%;
+}
+#fg{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    width: 97%;
+}
+button{
+    padding: 20px;
+    width: 95%;
+    margin-bottom: 10px;
+}

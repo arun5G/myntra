@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(246, 206, 213);
+}
+
+#Login{
+    height: auto;
+    width: 400px;
+    background-color: white;
+    margin: auto;
+    /* padding: 20px 10px 20px 10px; */
+    border-radius: 5px;
+    margin-top: 20px;
+   
+}
+form{
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+input{ 
+    width: 90%;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom:20px ;
+}
+a{
+    color: #ff3c6f;
+    font-weight: 500px;
+    text-decoration: none;
+}
+#submit{
+    width: 90%;
+    cursor: pointer;
+    background-color: rgb(239, 65, 65);
+    border: none;
+    margin: auto;
+    padding: 10px 63px 10px 70px;
+    color: white;
+    margin-top: 40px;
+    /* margin-left: 10px; */
+    margin-bottom: 30px;
+
+} 
+img{
+    width: 100%;
+}
+/* #terms{
+    margin-top: 20px;
+    margin-left: 5px;
+} */
+
