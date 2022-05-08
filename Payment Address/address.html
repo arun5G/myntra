@@ -42,14 +42,14 @@
                 </div>
 
                 <form action="" id="form2">
-                    <input type="number" placeholder="Pin Code" id="pin">
+                    <input type="number" placeholder="Pin Code" id="pin" oninput="result()">
                     <input type="text" placeholder="Address (House No, Building, Street, Area)" id="address">
                     <input type="text" placeholder="Locality / Town" id="locality">
                 </form>
 
                 <div id="state">
-                    <div>Bangalore</div>
-                    <div>Karnataka</div>
+                    <div><span></span></div>
+                    <div><span></span></div>
                 </div>
 
                 <div id="addressText">
@@ -117,7 +117,48 @@
 </html>
 
 <script>
-    
+// pin part
+
+var arr=[
+        {pin:"400099",city:"Mumbai",state:"Maharashtra"},
+        {pin:"400018",city:"Mumbai",state:"Maharashtra"},
+        {pin:"400033",city:"Mumbai",state:"Maharashtra"},
+        {pin:"401606",city:"Mumbai",state:"Maharashtra"},
+        {pin:"400091",city:"Mumbai",state:"Maharashtra"},
+        {pin:"400101",city:"Mumbai",state:"Maharashtra"},
+        {pin:"400050",city:"Mumbai",state:"Maharashtra"},
+        {pin:"400081",city:"Mumbai",state:"Maharashtra"},
+        {pin:"400064",city:"Mumbai",state:"Maharashtra"},
+        {pin:"560030",city:"Bangalore",state:"Karnataka"},
+        {pin:"560016",city:"Bangalore",state:"Karnataka"},
+        {pin:"560100",city:"Bangalore",state:"Karnataka"},
+        {pin:"560005",city:"Bangalore",state:"Karnataka"},
+        {pin:"560080",city:"Bangalore",state:"Karnataka"},
+        {pin:"560055",city:"Bangalore",state:"Karnataka"},
+        {pin:"562125",city:"Bangalore",state:"Karnataka"},
+        {pin:"562157",city:"Bangalore",state:"Karnataka"},
+        {pin:"560043",city:"Bangalore",state:"Karnataka"},
+        {pin:"110001",city:"Delhi",state:"Delhi"},
+        {pin:"110006",city:"Delhi",state:"Delhi"},
+        {pin:"110018",city:"Delhi",state:"Delhi"},
+        {pin:"110063",city:"Delhi",state:"Delhi"},
+        {pin:"110027",city:"Delhi",state:"Delhi"},
+        {pin:"110087",city:"Delhi",state:"Delhi"},
+        {pin:"110059",city:"Delhi",state:"Delhi"},
+        {pin:"110078",city:"Delhi",state:"Delhi"},
+    ]
+
+    function result(){
+        var str=document.querySelector("#pin").value
+        arr.forEach(function(el){
+            if(str==el.pin){
+                document.querySelector("#state>div:first-child>span").innerText=el.city
+                document.querySelector("#state>div:last-child>span").innerText=el.state
+            }
+        })
+    }
+
+// address part
 document.querySelector("#address>div:first-child").addEventListener("click",homeFunction);
 function homeFunction(){
 var acc=document.querySelector("#default>div:first-child").innerHTML=""
