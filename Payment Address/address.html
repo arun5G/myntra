@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <link rel="stylesheet" href="address.css">
+</head>
+<body>
+    <!-- topBar section -->
+
+    <div id="topBar">
+        <div><a href="https://www.myntra.com/"><img src="https://qph.cf2.quoracdn.net/main-qimg-e748b8006c86f5be09002f018a4e37ab" alt="MyntraLogo" width="80" height="80"></a></div>
+        <div>
+            <a href="">BAG</a>
+            <a href="address.html">ADDRESS</a>
+            <a href="payment.html">PAYMENT</a>
+        </div>
+        <div>
+            <img src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png" alt="AssuranceLogo" height="50" width="50">
+            <p>100% Secure</p>
+        </div>
+    </div>
+
+    <!-- address part Begins -->
+
+    <div id="container">
+        <div id="leftContainer">
+            <div>
+                <div>
+                    <span>CONTACT DETAILS</span>
+                </div>
+
+                <form action="" id="form1">
+                    <input type="text" placeholder="Name" id="name">
+                    <input type="number" placeholder="Mobile No" id="number">
+                </form>
+
+                <div>
+                    <span>ADDRESS</span>
+                </div>
+
+                <form action="" id="form2">
+                    <input type="number" placeholder="Pin Code" id="pin">
+                    <input type="text" placeholder="Address (House No, Building, Street, Area)" id="address">
+                    <input type="text" placeholder="Locality / Town" id="locality">
+                </form>
+
+                <div id="state">
+                    <div>Bangalore</div>
+                    <div>Karnataka</div>
+                </div>
+
+                <div id="addressText">
+                    <span>SAVE ADDRESS AS</span>
+                </div>
+
+                <div id="address">
+                    <div>HOME</div>
+                    <div>WORK</div>
+                </div>
+
+                <div id="default">
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div>
+                    <button>add address</button>
+                </div>
+            </div>
+        </div>
+            
+        <!-- Right Container Area -->
+        <div id="rightContainer">
+            <div>
+                <div><span>PRICE DETAILS</span></div>
+                <div>
+                    <div>
+                        <span>Total MRP</span>
+                    </div>
+                    <div>
+                        <span>Discount on MRP</span>
+                    </div>
+                    <div>
+                        <span>Convinience Fee</span>
+                    </div>
+                </div>
+                <div>
+                    <span>Total Amount</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bottom bar section -->
+
+    <div id="bottomBar">
+        <div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png" alt="1"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png" alt="2"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png" alt="3"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png" alt="4"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png" alt="5"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png" alt="6"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png" alt="7"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png" alt="8"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png" alt="9"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png" alt="10"></div>
+        </div>
+        <div>
+            <a href="https://www.myntra.com/contactus"><p>Need Help?</p></a>
+            <a href="https://www.myntra.com/contactus"><p>Contact Us</p></a>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    
+document.querySelector("#address>div:first-child").addEventListener("click",homeFunction);
+function homeFunction(){
+var acc=document.querySelector("#default>div:first-child").innerHTML=""
+var dcc=document.querySelector("#default>div:last-child").innerHTML=""
+var home=document.querySelector("#address>div:first-child");
+home.style.color="#ff3f6c"
+home.style.border="1px solid #ff3f6c"
+let span=document.createElement("span");
+span.innerText="Make this my default address"
+let input=document.createElement("input");
+input.setAttribute("type","checkbox");
+document.querySelector("#default>div:first-child").append(input)
+document.querySelector("#default>div:last-child").append(span) ;
+
+var color=document.querySelector("#address>div:last-child");
+color.style.color="#282c3f"
+color.style.border="1px solid #282c3f"
+}
+
+    
+
+document.querySelector("#address>div:last-child").addEventListener("click",workFunction);
+function workFunction(){
+var acc=document.querySelector("#default>div:first-child").innerHTML=""
+var dcc=document.querySelector("#default>div:last-child").innerHTML=""
+
+var work=document.querySelector("#address>div:last-child");
+work.style.color="#ff3f6c"
+work.style.border="1px solid #ff3f6c"
+let span=document.createElement("span");
+span.innerText="Make this my default address"
+let input=document.createElement("input");
+input.setAttribute("type","checkbox");
+document.querySelector("#default>div:first-child").append(input);
+document.querySelector("#default>div:last-child").append(span) ;
+
+var color=document.querySelector("#address>div:first-child");
+color.style.color="#282c3f"
+color.style.border="1px solid #282c3f"
+}
+
+
+// button part
+
+document.querySelector("button").addEventListener("click",toPayment);
+
+function toPayment(){
+    var arr=JSON.parse(localStorage.getItem("details"))||[]
+    var form1=document.querySelector("#form1");
+    var form2=document.querySelector("#form2");
+    var obj={
+        name:form1.name.value,
+        mobile:form1.number.value,
+        pin:form2.pin.value,
+        address:form2.address.value,
+        location:form2.locality.value
+    }
+    if(obj.name!=""&&obj.mobile!=""&&obj.pin!=""&&obj.address!=""&&obj.location!=""){
+        arr.push(obj);
+        localStorage.setItem("details",JSON.stringify(arr));
+        window.location.href="show address.html"
+    }
+    else{
+        alert("Fill all the details")
+    }
+}
+</script>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            margin: auto;
+        }
+        #box>div{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #box>div:nth-child(1)>div{
+            background-image: url(https://constant.myntassets.com/checkout/assets/img/paymentSprite-V2-18-09-2020.png);
+            overflow: hidden;
+            background-repeat: no-repeat;
+            display: inline-block;
+            background-size: 2090px 210px;
+            width: 42px;
+            height: 42px;
+            border-bottom: 1px solid #eaeaec;
+            border-radius: 50%;
+            background-position: -1422px -63px;
+            margin-right: 5px;
+        }
+        #box>div:nth-child(2)>div{
+            background-image: url(https://constant.myntassets.com/checkout/assets/img/paymentSprite-V2-18-09-2020.png);
+            overflow: hidden;
+            background-repeat: no-repeat;
+            display: inline-block;
+            background-size: 2090px 210px;
+            width: 42px;
+            height: 42px;
+            border-bottom: 1px solid #eaeaec;
+            border-radius: 50%;
+            background-position: -1474px -63px;
+            margin-right: 5px;
+        }
+        #box>div:nth-child(3)>div{
+            background-image: url(https://constant.myntassets.com/checkout/assets/img/paymentSprite-V2-18-09-2020.png);
+            overflow: hidden;
+            background-repeat: no-repeat;
+            display: inline-block;
+            background-size: 2090px 210px;
+            width: 42px;
+            height: 42px;
+            border-bottom: 1px solid #e9e9eb;
+            border-radius: 50%;
+            background-position: -1630px -63px;
+            margin-right: 5px;
+        }
+        h3{
+            font-weight: 600;
+            font-size: 16px;
+            font-family: Whitney,Helvetica,Arial,sans-serif!important;
+        }
+    </style>
+</head>
+<body>
+    <div><h3>Pay using UPI</h3></div>
+    <div id="box">
+        <div>
+            <input type="checkbox">
+            <div></div>
+            <span id="phonePe">PhonePe</span>
+        </div>
+        <div>
+            <input type="checkbox">
+            <div></div>
+            <span id="googlePay">Google Pay</span>
+        </div>
+        <div>
+            <input type="checkbox">
+            <div></div>
+            <span id="upi">Enter UPI ID</span>
+        </div>
+    </div>
+</body>
+</html>
+
+

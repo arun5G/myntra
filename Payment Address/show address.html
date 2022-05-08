@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <link rel="stylesheet" href="show address.css">
+</head>
+<body>
+
+    <!-- topbar -->
+    <div id="topBar">
+        <div><a href="https://www.myntra.com/"><img src="https://qph.cf2.quoracdn.net/main-qimg-e748b8006c86f5be09002f018a4e37ab" alt="MyntraLogo" width="80" height="80"></a></div>
+        <div>
+            <a href="">BAG</a>
+            <a href="address.html">ADDRESS</a>
+            <a href="payment.html">PAYMENT</a>
+        </div>
+        <div>
+            <img src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png" alt="AssuranceLogo" height="50" width="50">
+            <p>100% Secure</p>
+        </div>
+    </div>
+    <div id="text"><span>DEFAULT ADDRESS</span></div>
+    <div id="container">
+        <div id="leftContainer">
+            <div>
+                <div id="name">
+                    <span></span>
+                </div>
+                <div id="address">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="mobile">
+                    <span>Mobile:</span>
+                    <span></span>
+                </div>
+                <div><li>Pay on Delivery available</li></div>
+                <button id="btn">REMOVE</button>
+            </div>
+        </div>
+            
+        <!-- Right Container Area -->
+        <div id="rightContainer">
+            <div>
+                <div><span>PRICE DETAILS</span></div>
+                <div>
+                    <div>
+                        <span>Total MRP</span>
+                    </div>
+                    <div>
+                        <span>Discount on MRP</span>
+                    </div>
+                    <div>
+                        <span>Convinience Fee</span>
+                    </div>
+                </div>
+                <div>
+                    <span>Total Amount</span>
+                </div>
+            </div>
+            <div>
+                <button>Continue</button>
+            </div>
+        </div>
+    </div>
+    <!-- bottom bar section -->
+
+    <div id="bottomBar">
+        <div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png" alt="1"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png" alt="2"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png" alt="3"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png" alt="4"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png" alt="5"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png" alt="6"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png" alt="7"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png" alt="8"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png" alt="9"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png" alt="10"></div>
+        </div>
+        <div>
+            <a href="https://www.myntra.com/contactus"><p>Need Help?</p></a>
+            <a href="https://www.myntra.com/contactus"><p>Contact Us</p></a>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    var details=JSON.parse(localStorage.getItem("details"));
+    console.log(details.name)
+    data(details)
+    function data(details){
+        details.forEach(function(el){
+            var name=document.querySelector("#name>span");
+            name.innerText=el.name
+            var address=document.querySelector("#address>span:first-child");
+            address.innerText=el.address
+            var location=document.querySelector("#address>span:nth-child(2)");
+            location.innerText=el.location
+            var pin=document.querySelector("#address>span:last-child");
+            pin.innerText=el.pin
+            var mobile=document.querySelector("#mobile>span:last-child");
+            mobile.innerText=el.mobile
+        });
+    }
+
+    document.querySelector("#btn").addEventListener("click",againtoAddress);
+
+    function againtoAddress(){
+        window.location.href="address.html"
+        localStorage.clear()
+    }
+
+    document.querySelector("#rightContainer>div>button").addEventListener("click",paymentpage);
+    function paymentpage(){
+        window.location.href="payment.html"
+    }
+</script>
