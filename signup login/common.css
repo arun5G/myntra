@@ -1,0 +1,27 @@
+#container{
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#container div{
+    width: 100%;
+/* justify-content: stretch; */
+/* justify-content: center; */
+height: 500px;
+/* font-stretch: expanded; */
+}
+img{
+    width: 100%;
+}
+*{
+    padding: 3px 3px;
+}
+.class{
+    border: 1px solid;
+    background: radial-gradient(rgb(0, 251, 255),yellow,rgb(30,144,255));
+    text-align: center;
+}
+.class a{
+    text-decoration: none;
+color: black;
+}

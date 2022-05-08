@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="login.css">
+<body>
+    <div class="class">
+
+        <a href="login.html">login</a>
+    </div>
+    <div id="cont">
+        <form id="form" >
+            <input type="text" placeholder="name" id="name">
+            <input type="email" placeholder="email" id="email">
+            <input id="number" type="number" placeholder="mobile">
+            <input id="password" type="password" placeholder="password">
+      <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    var arr=JSON.parse(localStorage.getItem("data")) || [];
+document.querySelector("form").addEventListener("submit",function(){
+event.preventDefault()
+
+
+var o={
+    eman:form.name.value,
+em:form.email.value,
+ num:form.number.value,
+ pas:form.password.value,
+} 
+
+ arr.push(o);
+ console.log(o)
+
+//-------------------------------------
+
+localStorage.setItem("data",JSON.stringify(arr));
+alert("signed up successfully");
+window.location.href="login.html"
+
+
+
+
+ 
+
+
+// localStorage.setItem(JSON.stringify(o))
+
+   
+})
+
+
+</script>

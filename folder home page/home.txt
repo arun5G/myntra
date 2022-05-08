@@ -1,0 +1,50 @@
+
+  var img1=[
+      {
+          img:"https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/1ff4a91b-5bb2-4a67-90c8-94f2fc98ee3c1650529239139-BudgetBuys_HairAccessories.jpg"
+      },
+ {
+          img:"https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/56cda127-ed4a-47b6-b527-da09374b80e71650529239254-BudgetBuys_Necklaces_Chains.jpg"
+      },
+
+ {
+          img:"https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/8425b6ae-bdb8-4ca9-9e8f-0b026fdab6131650529239356-BudgetBuys_SportsBras.jpg"
+      },
+
+ {
+          img:"https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/17d6d7d7-8dc0-473a-abe1-9e95de4707531650529238837-BudgetBuys_ActivewearTees.jpg"
+      },
+
+ {
+          img:"https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/cc737c79-12bb-4178-8115-159678c11af41650529238820-BudgetBuys_ActivewearK.jpg"
+      },
+
+ {
+          img:"https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/60304d81-0310-4c10-bf56-70e0b455256d1650529238974-BudgetBuys_ComfyActivewear.jpg"
+      },
+
+ {
+          img:"https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/158c3ed9-ba36-42db-a348-837a99bf16631650529239393-BudgetBuys_Suits_Blazers.jpg"
+      },
+
+ {
+          img:"https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/2bbfdc41-5731-4b07-9315-cedda0412a101650529239337-BudgetBuys_Shorts_Skirts.jpg"
+      },
+
+ {
+          img:"https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/b818a325-f717-44bd-9dcc-7459792a281d1650529239017-BudgetBuys_CuteDresses.jpg"
+      },
+
+ {
+          img:"https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/0fa096de-3fe4-49a4-9f55-e3e864c656b11650529238954-BudgetBuys_ClothingSets.jpg"
+      },
+
+ {
+          img:"https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/4abfd733-b830-4455-8248-4e4d6797bbee1650529239121-BudgetBuys_FormalShoes.jpg"
+      },
+
+ {
+          img:"https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/57b7317f-142b-4774-a0fc-03c9f0a56a561650529238912-BudgetBuys_BestofKurtas.jpg"      
+      },
+
+  ]

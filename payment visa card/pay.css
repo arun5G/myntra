@@ -1,0 +1,137 @@
+*{
+    text-transform: uppercase;
+}
+#pbox{
+    /* display: grid; */
+    /* grid-template-columns: repeat(1,1fr); */
+    border: 1px solid;
+    width: 200px;
+    /* justify-content: end; */
+    margin: auto;
+
+    align-items: center;
+}
+#pbox input{
+    display: block;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+
+.fa-cc-visa{
+    border-radius: 5px;
+    margin: 0 0 0px 60px;
+    
+}
+
+p,em,span{
+    font-size: 10px;
+   padding: 0;
+   
+   /* margin: -10px 0 0 0; */
+}
+/* em,span{
+    margin-top: -20px 0 0 0;
+} */
+
+#front:hover{
+    backface-visibility: hidden;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform .4s ease-out;
+}
+
+#back:hover{
+    backface-visibility: hidden;
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform .4s ease-out;
+
+}
+/* #front:hover{
+      transform: perspective(1000px) rotateY(180deg);
+       transition: transform .4s ease-out;
+}
+
+#back:hover{
+      transform: perspective(1000px) rotateY(0deg);
+       transition: transform .4s ease-out;
+} */
+#submit{
+    background: linear-gradient(45deg,blueviolet,deeppink);
+    break-before: 5px;
+    
+}
+/* *:hover{
+margin-top: 3px;
+}
+ */
+ #card-container{
+     position: relative;
+     /* background-color: rgb(113, 113, 17); */
+     /* padding-bottom: -150px; */
+     padding: 100px 0 0 0 ;
+     width: 80%;
+margin: auto;
+ }
+ #front{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100px;
+     border-radius: 5px;
+     /* height: 100%; */
+     backface-visibility: hidden;
+     transform: perspective(1000px) rotateY(0deg);
+     transition: transform 4s ease-out;
+     background: linear-gradient(45deg,blueviolet,deeppink);
+ }
+ #back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+height: 100px;
+    /* height: 100%; */
+    backface-visibility: hidden;
+    transform: perspective(1000px) rotateY(-180deg);
+    transition: transform 4s ease-out;
+    background: linear-gradient(45deg,blueviolet,deeppink);
+    text-align: right;
+}
+img{
+    width: 45px;
+    /* height: px; */
+    /* background-color: aqua; */
+}
+.flexox{
+    background-color: aliceblue;
+    width: 50px;
+    margin-left: 110px;
+}
+hr{
+    height: 13px;
+    background-color: black;
+    border: 0px;
+}
+.inputbox{
+    margin: 4px 0;
+    border-radius: 6px;
+}
+.cardnum{
+    margin: 10px 0 10px 4px;
+}
+span{
+    margin-left: 4px;
+}
+#pbox{
+    background-color: aliceblue;
+   box-shadow:30px 30px 50px rgb(31, 225, 183),0 0 80px rgb(255, 255, 255),80px 500px 160px rgb(6, 65, 213);
+    ;
+}
+body{
+    
+  background-repeat: round;
+  background-color: rgb(241, 241, 241);
+}

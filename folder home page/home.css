@@ -1,0 +1,264 @@
+#first{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#first img{
+    width: 100%;
+}
+div +img{
+    width: 100%;
+}
+#row2,#row3 a,#row5 a{
+    display: grid;
+    grid-template-columns: repeat(6,1fr)
+}
+#row2 img,#row3 img,#row5 img{
+    width:100% ;
+}
+#row4 a{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+#row4 img{
+    width: 100%;
+}
+#bottom1 a{
+    display: block;
+    text-decoration: none;
+}
+#bottom1 *{
+    font-size: 12px;
+    color: grey;
+}
+#bottom1 p{
+color: black;
+}
+
+#bottom1{
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid; */
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns:repeat(4,1fr) ;
+}
+/* #bottom1>div{
+    width: 20%;
+     border: 1px solid;
+} */
+#bottom1 img{
+    width: 100%;
+    
+}
+/* #bottom>:nth-child(3){
+    width: 50%;
+      border: 1px solid;
+} */
+p+div{
+    display: flex;
+}
+#qwer img{
+margin-top: 15px;
+width: 20px;
+height: 25px;
+}
+#qwer>div{
+    display: flex;
+}
+#qwer div div{
+    font-size: 10px;
+
+}
+em{
+    background-color: red;
+  
+    color: aliceblue;
+    border-radius: 10px;
+   font-weight: 800;
+    padding: 1px 2px;
+}
+
+#pop{
+    display: flex;
+}
+/* #pop div div{
+    width: 100%;
+    height: 1px;
+    border: 1px solid grey;
+} */
+/* hr{
+width: 30px; 
+height: 1px;   
+} */
+
+#bottom2,#alllinks,#address,#end{
+      width: 80%;
+    margin: auto;
+}
+.separator {
+  
+    margin-top: 5px;
+    /* text-align: left; */
+    position: relative;
+}
+
+.separator hr {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.separator a{
+    position: absolute;
+    font-size: 10px;
+    /* top: 0px; */
+    font-style: italic;
+    background: #fff;
+    z-index: 10;
+    padding: 2px 20px 2px 0;
+    
+}
+#alllinks{
+    margin-top: 60px;
+    /* border: 1px solid; */
+
+}
+#alllinks a,#alllinks p,#address p,#address a,#end a,#end p{
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+}
+p>a{
+    font-weight: 600;
+    color: black;
+    font-size: 40px
+}
+#alllinks div,#address{
+    display: flex;
+    justify-content: space-between;
+}
+nav~div img:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f4, 0 0 80px #2196f3
+}
+
+/* navbar css */
+nav>div{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav div div{
+padding: 10px 3px;
+padding-left: 10px;
+
+}
+
+nav img{
+   width:55px;
+   margin-top: -5px;
+  height: 55px;
+  box-shadow: none;
+}
+nav input{
+    display: block;
+    margin: 10px 0 1px 15px;
+    height: 20px;
+width: 300px;
+color: grey;
+border: 0px solid ;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+nav *{
+    font-family: 'Rubik', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+}
+nav p{
+    position: absolute;
+    margin: -15px 0 0 39px;
+    font-size: 7px;
+    color: red;
+}
+nav .fa-solid{
+    margin: 13px 0 0 20px;
+    font-size: 12px;
+    color: grey;
+}
+nav #end div{
+    display: flex;
+    flex-direction: column;
+}
+nav .fa{
+    font-size: 12px;
+    margin: auto;
+}
+nav{
+    margin-top: -22px;
+    position: fixed;
+    background-color: aliceblue;
+    width: 100%;
+ padding-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.FreeShippingBanner-sidebar-content{
+    
+    transform: rotate(-90deg);
+    font-size: 20px;
+    padding: 2px ;
+    /* vertical-align: middle; */
+    text-align: center;
+    /* margin-block-end: 0; */
+    display: inline-block;
+ /* height: 100px; */
+ width: 200px;
+    /* writing-mode: vertical-rl; */
+   margin: 30% 0 2% 86% ;
+   border: 1px solid;
+position: fixed;
+}
+
+
+#top ol{
+    display: none;
+}
+#top>div:hover ol{
+    position: absolute;
+    display: block;
+    background-color: rgb(199, 245, 135);
+    border-radius: 15px;
+padding:20px 20px;
+width: 50px;
+}
+#top:hover ol *,#end:hover ol *{
+    padding: 2px;
+}
+
+#end ol{
+    display: none;
+}
+#end>div:hover ol{
+    position: absolute;
+    display: block;
+     background-color: rgb(245, 140, 136);
+       border-radius: 15px;
+padding: 20px 20px;
+margin-top: 30px;
+
+} 
+#end em{
+    background-color: red;
+    color: aliceblue;
+border-radius: 5px;
+padding-top: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/* navbar css end */

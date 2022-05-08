@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#otp form{
+    background-color: aliceblue;
+   box-shadow:30px 30px 50px rgb(31, 225, 183),0 0 80px rgb(255, 255, 255),80px 500px 160px rgb(6, 65, 213);
+    ;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+</style>
+<body>
+    <I>hint:otp=1234</I>
+    <div id="otp">
+        <form action="">
+        <input type="number" id="input" placeholder="Enter OTP">
+<input type="submit" id="submit">
+        <a href="pay.html">Back</a>
+        </form>
+
+    </div>
+</body>
+</html>
+<script>
+
+document.querySelector("form").addEventListener("submit",function(){
+event.preventDefault()
+    var a=document.querySelector("#input").value;
+    if(a==1234){
+
+        alert("payment successful")
+       
+        window.location.href="../400 off/400off.html"
+    }
+    else{
+        alert("Invalid OTP,Retry")
+    }
+
+})
+
+</script>
