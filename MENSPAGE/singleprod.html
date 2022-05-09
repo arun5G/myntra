@@ -74,7 +74,7 @@
        
        
            <!--  -->
-            <div><a href="#">MEN</a>
+            <div><a href="./../MENSPAGE/men.html">MEN</a>
            <ol>
                <li><a href="#">shirt</a></li>
                 <li><a href="#">shirt</a></li>
@@ -255,12 +255,13 @@
        
             <div>
                <i class="fa fa-heart-o" aria-hidden="true"></i>
-       Wishlist
+                <a href="./../wishlist/wishlist.html">whishlist</a>
        
             </div>
             <div>
                <i class="fa fa-shopping-bag" aria-hidden="true"></i> 
-               Bag</div>
+               <a href="./../BAG/bag.html">Bag</a>
+            </div>
         </div>
        </nav>
        
@@ -296,7 +297,7 @@
          <h3>Men Navy Blue Slim Fit</h3>
          <h2>1234</h2>
          <p id="green">Inclusive of all taxes</p>
-         <button id="btn1"  onclick="show()">Add to Cart</button>
+         <button id="btn1"  onclick="show()">Move to Bag</button>
          <button id="btn2" onclick="display()">Add to Wishlist</button>
          <input type="text" placeholder="Enter Pincode">
          <p id="desc">Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
@@ -561,13 +562,21 @@
 
 
   <script>
+      var cartLSData=JSON.parse(localStorage.getItem("masai-cart")) || [] ;
+      var bagArr = JSON.parse(localStorage.getItem("bag")) || [];
+
       function show(){
-          var btn=document.getElementById("btn1");
-          alert("Added to Cart");
+        //   var btn=document.getElementById("btn1");
+        bagArr.push(element)
+        localStorage.setItem("bag",JSON.stringify(bagArr))
+        window.location.href="./../BAG/bag.html"
+        alert("Added to Bag");
       }
 
       function display(){
-          var button=document.getElementById("btn2");
+        //   var button=document.getElementById("btn2");
+          cartLSData.push(element);
+          localStorage.setItem("masai-cart",JSON.stringify(cartLSData));
           alert("Added to Wishlist");
       }
   </script>
