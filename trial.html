@@ -693,9 +693,11 @@ function display(data){
        price.textContent=element.price;
 
        var button=document.createElement("button");
-       button.innerText="Add to Cart";
+       button.innerText="Buy Now";
+    //    button.setAttribute("href","payment.html")
        button.addEventListener("click",function(){
-           addToCart(element);
+         
+        addToCart(element);
        })
 
        card.append(img,name,category,price,button);
@@ -738,7 +740,8 @@ category.addEventListener("change", function(){
   function addToCart(element){
     cartLSData.push(element);
     localStorage.setItem("masai-cart",JSON.stringify(cartLSData));
-    alert("Product added successfully");
+    // alert("Product added successfully");
+window.location.href="payment.html"
   }
 
 //  trial part for sorting based on price

@@ -71,7 +71,7 @@
     box-shadow: 0 0 4px rgb(40 44 63 / 20%);
     border: 1px solid #eaeaec;
     margin-bottom: 8px;
-    vertical-align: top;
+    /* vertical-align: top;        edited by aru ************************************************************* */
     border-radius: 4px;
     position: relative;
 }

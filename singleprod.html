@@ -296,7 +296,7 @@
          <h3>Gold-toned textured</h3>
          <h2>1234</h2>
          <p id="green">Inclusive of all taxes</p>
-         <button id="btn1"  onclick="show()">Add to Cart</button>
+         <button id="btn1"  onclick="show()">Buy Now</button>
          <button id="btn2" onclick="display()">Add to Wishlist</button>
          <input type="text" placeholder="Enter Pincode">
          <p id="desc">Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
@@ -563,7 +563,10 @@
   <script>
       function show(){
           var btn=document.getElementById("btn1");
-          alert("Added to Cart");
+        //   alert("Added to Cart");
+        window.location.href="payment.html"
+
+
       }
 
       function display(){

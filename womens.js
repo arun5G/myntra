@@ -548,7 +548,7 @@ for(var i=0;i<womensData.length;i++){
  var btn=document.createElement("button");
  btn.innerText="Buy Now"
  a.append(btn)
- a.setAttribute("href","pay.html")
+ a.setAttribute("href","payment.html")
    img.setAttribute("src",womensData[i].image_url);
    nam.innerText=womensData[i].name;
 price.innerText= womensData[i].price;

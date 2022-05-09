@@ -319,7 +319,7 @@ for(var i=0;i<mensData.length;i++){
    var hi=document.createElement("h4")
 ///////////////////////////////////////
 var a=document.createElement("a")
-a.setAttribute("href","pay.html")
+a.setAttribute("href","payment.html")
  var btn=document.createElement("button");
  btn.innerText="Buy Now"
  a.append(btn)

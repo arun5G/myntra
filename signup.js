@@ -17,7 +17,7 @@ function newA(){
     else
     {
         localStorage.setItem("Details", JSON.stringify(deatils))
-        window.location.href="./../folder home page/home.html"
+        window.location.href="home.html"
     }
 }
 
