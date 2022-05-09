@@ -45,12 +45,14 @@ function display(data){
     document.querySelector("#amount").innerText=sum
     document.querySelector("#MRP").innerText=sum
 
-    document.querySelector("#placingOrder").addEventListener("click",function(){
-        payment()
-    })
+    // document.querySelector("#placingOrder").addEventListener("click",function(){
+    //     window.location.href="address.html"
+    //     alert("working")
+    // })
 
     function payment(){
-        
+        window.location.href="address.html"
+        alert("working")
     }
 
  
