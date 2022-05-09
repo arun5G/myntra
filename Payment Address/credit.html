@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            display: grid;
+            grid-template-columns: 60%;
+            gap: 10px;
+            width: 100%;
+
+        }
+        div>div{
+            display: grid;
+            grid-template-columns: 60% 35%;
+            gap: 5%;
+            width: 100%;
+        }
+        input{
+            height: 30px;
+        }
+        button{
+            height: 30px;
+            background-color: #ff3f6c;
+            border: 0px;
+            border-radius: 4px;
+            color: white;
+        }
+        h3{
+            font-weight: 600;
+            font-size: 16px;
+            font-family: Whitney,Helvetica,Arial,sans-serif!important;
+        }
+        span{
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h3>CREDIT/DEBIT CARD</h3>
+        <input type="text">
+        <input type="text">
+        <div>
+            <input type="text">
+            <input type="text">
+        </div>
+        <span><input type="checkbox">Save this card for faster payments</span>
+        <button>PAY NOW</button>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("button").addEventListener("click",pay)
+    function pay(){
+        alert("Payment Successful")
+    }
+</script>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box>div{
+            display: flex;
+            margin-bottom: 10px;
+        }
+        #box>div>div{
+            border: 1px solid black;
+            width: 200px;
+            height: 50px;
+            margin-right: 30px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #box>div>p{
+            color: #ff3f6c;
+            cursor: pointer;
+        }
+        input{
+            height: 30px;
+            width: 250px;
+        }
+        button{
+            width: 250px;
+            height: 50px;
+            background-color: #ff3f6c;
+            border: 0px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #box>p{
+            font-size: 12px;
+            margin-top: 8px;
+            color: #282c3f;
+            margin-bottom: 20px;
+        }
+        h3{
+            font-weight: 600;
+            font-size: 16px;
+            font-family: Whitney,Helvetica,Arial,sans-serif!important;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h3>Pay On Delivery</h3>
+        <div>
+            <div>76854</div>
+            <p>Change Image</p>
+        </div>
+        <input type="text" placeholder="Enter code shown in above image*">
+        <p>You can pay via Cash/Card or UPI enabled app at the time of delivery. Ask your delivery executive for these options.</p>
+        <button>Place Order</button>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("button").addEventListener("click",order);
+
+    function order(){
+        var input=document.querySelector("#box>input").value ;
+        if(input==76854||input==79025){
+            alert("Order Has Been Placed")
+        }
+        else if(input==""){
+            alert("Please fill the captcha code and try")
+        }
+        else{
+            alert("Wrong captcha code filled")
+        }
+    }
+
+    document.querySelector("#box>div>p").addEventListener("click",change);
+
+    function change(){
+        document.querySelector("#box>div>div").innerText="79025"
+    }
+</script>
