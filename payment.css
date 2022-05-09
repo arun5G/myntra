@@ -31,6 +31,10 @@
     font-family: Whitney,Helvetica,Arial,sans-serif!important;
     color: #696B79;
 }
+#topBar>div:nth-child(2)>a:hover{
+    color: #ff3f6c;
+    border-bottom: 3px solid #ff3f6c;
+}
 #topBar>div:nth-child(3){
     display: flex;
     justify-content: center;
@@ -88,6 +92,17 @@
     font-weight: 600;
     margin: 0 0 26px 12px;
     font-family: Whitney,Helvetica,Arial,sans-serif!important;
+}
+.text a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Whitney,Helvetica,Arial,sans-serif!important;
+    color: black;
+    border-bottom: 4px solid #ff3f6c;
+}
+.text a:hover{
+    color: #ff3f6c;
 }
 #payment>div:nth-child(2){
     margin-top: 16px;
@@ -206,4 +221,9 @@
     color: #3e4152;
     line-height: 16px;
     font-family: Whitney,Helvetica,Arial,sans-serif!important;
+}
+#charge>div{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
 }

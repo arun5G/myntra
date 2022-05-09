@@ -33,6 +33,10 @@
     font-family: Whitney,Helvetica,Arial,sans-serif!important;
     color: #696B79;
 }
+#topBar>div:nth-child(2)>a:hover{
+    color: #ff3f6c;
+    border-bottom: 3px solid #ff3f6c;
+}
 #topBar>div:nth-child(3){
     display: flex;
     justify-content: center;
@@ -177,6 +181,11 @@ div>li{
     letter-spacing: 1px;
     width: 400px;
     margin: auto;
+}
+#charge>div{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
 }
 /* bottom bar css */
 #bottomBar{
