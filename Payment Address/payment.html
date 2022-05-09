@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <!-- topbar section -->
+    <div id="topBar">
+        <div><a href="https://www.myntra.com/"><img src="https://qph.cf2.quoracdn.net/main-qimg-e748b8006c86f5be09002f018a4e37ab" alt="MyntraLogo" width="80" height="80"></a></div>
+        <div>
+            <a href="">BAG</a>
+            <a href="address.html">ADDRESS</a>
+            <a href="payment.html">PAYMENT</a>
+        </div>
+        <div>
+            <img src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png" alt="AssuranceLogo" height="50" width="50">
+            <p>100% Secure</p>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="leftContainer">
+            <!-- Offer section Starts -->
+            <div>
+                <div>
+                    <h3><span>Bank Offer</span></h3>
+                </div>
+                <div>
+                    <li>
+                        <span>5% Unlimited Cashback on Flipkart Axis Bank Credit Card. TCA</span>
+                    </li>
+                </div>
+                <button>Show More</button>
+            </div>
+
+            <!-- Payment section starts -->
+
+            <div id="payment">
+                <!-- Payment Mode Text -->
+                <div class="text"> Choose Payment Mode </div>
+                <!-- Payment Mode Complete Area -->
+                <div>
+                    <!-- Payment Mode Left Container -->
+                    <div id="paymentOptions">
+                        <div><span>Cash On Delivery (Cash/Card/UPI)</span></div>
+                        <div><span>Credit/Debit Card</span></div>
+                        <div><span>PhonePe/Google Pay/BHIM UPI</span></div>
+                        <div><span>Paytm/Payzapp/Wallets</span></div>
+                        <div><span>Net Banking</span></div>
+                    </div>
+                    <!-- Payment Mode Right Container -->
+                    <div id="paymentsPage"></div>
+                </div>
+                <!-- Gift Coupon Area -->
+                <div>
+                    <span>Have a Gift Card?</span>
+                    <span id="giftCard">APPLY GIFT CARD</span>
+                </div>
+            </div>
+        </div>
+        <!-- Right Container Area -->
+        <div id="rightContainer">
+            <div>
+                <div><span>PRICE DETAILS</span></div>
+                <div>
+                    <div>
+                        <span>Total MRP</span>
+                    </div>
+                    <div>
+                        <span>Discount on MRP</span>
+                    </div>
+                    <div>
+                        <span>Convinience Fee</span>
+                    </div>
+                </div>
+                <div>
+                    <span>Total Amount</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom bar section -->
+
+    <div id="bottomBar">
+        <div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png" alt="1"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png" alt="2"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png" alt="3"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png" alt="4"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png" alt="5"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png" alt="6"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png" alt="7"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png" alt="8"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png" alt="9"></div>
+            <div><img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png" alt="10"></div>
+        </div>
+        <div>
+            <a href="https://www.myntra.com/contactus"><p>Need Help?</p></a>
+            <a href="https://www.myntra.com/contactus"><p>Contact Us</p></a>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    // Offer section javascript
+
+    var offerArr= [
+"5% Unlimited Cashback on Flipkart Axis Bank Credit Card. TCA",
+"10% Cashback upto Rs 100 on Paytm Postpaid transaction on a min spend of Rs 1000 . TCA",
+"15% Cashback upto Rs 150 on Freecharge Paylater transaction. TCA",
+"10% Cashback upto Rs 200 on Ola Money Postpaid or wallet transaction on a min spend of Rs 1000 . TCA",
+"Upto Rs 500 Cashback on Mobikwik Wallet Transactions on a min spend of Rs 999.Use code MBK500 on Mobikwik.TCA",
+"5% Cashback upto Rs 150 on a minimum spend of Rs 1,500 with PayZapp. TCA"] ;
+var temp=true;
+
+var btn=document.querySelector("#leftContainer>div:nth-child(1)>button");
+btn.addEventListener("click",offers);
+
+
+
+function offers(el){
+    var offerslist = document.querySelector("#leftContainer>div:first-child>div:nth-child(2)");
+    if(temp==true){
+        offerArr.forEach(function(el){
+        list=document.createElement("li");
+        span=document.createElement("span")
+        span.innerText=el;
+        list.append(span);
+        offerslist.append(list);
+        })
+        temp=false;
+        btn.innerText="Show Less";
+    }
+    else{
+        offerslist.innerHTML=""
+        var list1=document.createElement("li");
+        var span1=document.createElement("span");
+        span1.innerText="10% Instant Discount on Standard Chartered Credit and Debit Cards on mini spend of  Rs 3000. TCA";
+        list1.append(span1);
+        offerslist.append(list1);
+        btn.innerText="Show More";
+        temp=true;
+    }
+    console.log(temp)
+}
+
+// Offer Section Completed
+
+// Payment Section Begins
+
+
+
+
+var cash1=document.querySelector("#paymentOptions>div:first-child");
+cash1.addEventListener("click",Cash1);
+
+
+function Cash1(){
+    var payment=document.querySelector("#paymentsPage").innerHTML=""
+    cash1.style.color="#ff3f6c"
+    cash2.style.color="#424553"
+    cash3.style.color="#424553"
+    cash4.style.color="#424553"
+    cash5.style.color="#424553"
+    var div=document.createElement("div")
+    div.setAttribute("class","priceOptions")
+    var frame=document.createElement("iframe")
+    frame.setAttribute("src","cod.html");
+    div.append(frame)
+    document.querySelector("#paymentsPage").append(div);
+}
+
+var cash2=document.querySelector("#paymentOptions>div:nth-child(2)");
+cash2.addEventListener("click",Cash2);
+function Cash2(){
+    var payment=document.querySelector("#paymentsPage").innerHTML=""
+    cash2.setAttribute("class","paymentColor")
+    cash1.style.color="#424553"
+    cash2.style.color="#ff3f6c"
+    cash3.style.color="#424553"
+    cash4.style.color="#424553"
+    cash5.style.color="#424553"
+    var div=document.createElement("div")
+    div.setAttribute("class","priceOptions")
+    var frame=document.createElement("iframe")
+    frame.setAttribute("src","credit.html");
+    div.append(frame)
+    document.querySelector("#paymentsPage").append(div);
+}
+
+var cash3=document.querySelector("#paymentOptions>div:nth-child(3)");
+cash3.addEventListener("click",Cash3);
+function Cash3(){
+    var payment=document.querySelector("#paymentsPage").innerHTML=""
+    cash3.setAttribute("class","paymentColor")
+    cash1.style.color="#424553"
+    cash2.style.color="#424553"
+    cash3.style.color="#ff3f6c"
+    cash4.style.color="#424553"
+    cash5.style.color="#424553"
+    var div=document.createElement("div")
+    div.setAttribute("class","priceOptions")
+    var frame=document.createElement("iframe")
+    frame.setAttribute("src","upi.html");
+    div.append(frame)
+    document.querySelector("#paymentsPage").append(div);
+}
+
+var cash4=document.querySelector("#paymentOptions>div:nth-child(4)");
+cash4.addEventListener("click",Cash4);
+function Cash4(){
+    var payment=document.querySelector("#paymentsPage").innerHTML=""
+    cash4.setAttribute("class","paymentColor")
+    cash1.style.color="#424553"
+    cash2.style.color="#424553"
+    cash3.style.color="#424553";
+    cash4.style.color="#ff3f6c"
+    cash5.style.color="#424553"
+    var div=document.createElement("div")
+    div.setAttribute("class","priceOptions")
+    var frame=document.createElement("iframe")
+    frame.setAttribute("src","wallet.html");
+    div.append(frame)
+    document.querySelector("#paymentsPage").append(div);
+}
+
+var cash5=document.querySelector("#paymentOptions>div:nth-child(5)");
+cash5.addEventListener("click",Cash5);
+function Cash5(){
+    var payment=document.querySelector("#paymentsPage").innerHTML=""
+    cash5.setAttribute("class","paymentColor")
+    cash1.style.color="#424553"
+    cash2.style.color="#424553"
+    cash3.style.color="#424553"
+    cash4.style.color="#424553"
+    cash5.style.color="#ff3f6c"
+    var div=document.createElement("div")
+    div.setAttribute("class","priceOptions")
+    var frame=document.createElement("iframe")
+    frame.setAttribute("src","netBanking.html");
+    div.append(frame)
+    document.querySelector("#paymentsPage").append(div);
+}
+
+document.querySelector("#giftCard").addEventListener("click",giftCard);
+function giftCard(){
+    alert("Gift Card Applied")
+}
+</script>
