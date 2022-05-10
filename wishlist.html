@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(auto,auto);
+            gap: 30px 50px;
+            width: 85%;
+            margin: auto;
+            margin-top: 100px;
+        }
+        #container>div{
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            /* border: 1px solid red; */
+        }
+        img{
+            height:250px;
+            width: 100%;
+        }
+        /* #category{
+            display: block;
+            padding: 10px 13px 10px 10px;
+            border-radius: 20px ;
+            color: brown;
+            margin-top: 30px;
+            position: fixed;
+            top: 270px;
+        } */
+        button{
+            background-color: palevioletred;
+            margin: auto;
+            display: block;
+            border: 0px;
+            padding: 10px 5px 10px 5px;
+            border-radius: 15px;
+            color: aliceblue;
+            margin-bottom: 10px;
+
+        }
+        button:hover{
+            color: palevioletred;
+            background-color: aliceblue;
+        }
+        /* .side{
+            border: 1px solid black;
+            width: 20%;
+            height: 600px;
+            position: fixed;
+            top: 180px
+        } */
+        h2{
+            text-align: center;
+            margin-top: 0px;
+        }
+        h3{
+            text-align: center;
+            margin-top: -9px;
+        }
+        h4{
+            text-align: center;
+            margin-top: -9px;
+        }
+        @media all and (min-width:251px) and (max-width:450px){
+            .products{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(11,1fr);
+        }
+        }
+        @media all and (min-width:30px) and (max-width:250px){
+            .products{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(16,1fr);
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>My Wishlist</h1>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+    var cartLSData = JSON.parse(localStorage.getItem("masai-cart"))
+    var bagArr = JSON.parse(localStorage.getItem("bag")) || [];
+    var container=document.querySelector("#container");
+
+    display(cartLSData)
+
+    function display(data){
+        container.innerHTML=null;
+
+        data.forEach(function(element){
+
+
+       var card=document.createElement("div");
+
+
+       var img=document.createElement("img");
+       img.src=element.image_url;
+       img.addEventListener("click",function(){
+        window.location.href = "./singleprod.html";
+       })
+        
+       var name=document.createElement("h2");
+       name.textContent=element.name;
+
+       var category=document.createElement("h3");
+       category.textContent=element.category;
+
+       var price=document.createElement("h4");
+       price.textContent=element.price;
+
+       var button=document.createElement("button");
+       button.innerText="Move to bag";
+       button.addEventListener("click",function(){
+           bagFun(element);
+       })
+
+       card.append(img,name,category,price,button);
+       container.append(card);
+   });
+}
+
+    function bagFun(element){
+        bagArr.push(element)
+        localStorage.setItem("bag",JSON.stringify(bagArr))
+        window.location.href="bag.html"
+    }
+
+</script>

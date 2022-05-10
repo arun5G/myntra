@@ -1,0 +1,139 @@
+*{
+    margin-bottom: 5px;
+}
+#bagcontent{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+}
+#itemdetails{
+    width: 60%;
+    /* padding-left: 20px; */
+}
+#pincode{
+    display: flex;
+    width: 95%;
+    font-size: small;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid grey;
+}
+#pincode>button{
+    border:1px solid red;
+    color: red;
+    background-color: white;
+    padding: 5px;
+}
+#offer{
+    padding-left: 15px;
+    border: 1px solid grey;
+}
+#offer>li+h4{
+    color: red;
+}
+#delivery{
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+}
+#delivery>img{
+    width: 35px;
+    height: 20px;
+}
+#item{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding-left: 5px;
+}
+#item>div>button{
+    border: none;
+    background-color: white;
+}
+#item>div>button:nth-child(2){
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 1px solid grey;
+}
+#item>div>button:nth-child(1){
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border-left: 1px solid grey; */
+}
+
+/* right side of the page */
+
+#pricedetails{
+    padding: 5px;
+    padding-left: 10px;
+    border-left: 1px solid grey;
+
+}
+#donate{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2.1fr);
+    gap:10px;
+    text-align: center;
+
+}
+#donate>div{
+    border-radius: 30%;
+    padding: 10px;
+    width: 50px;
+    border:1px solid grey;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+#apply{
+    columns: red;
+    border: 1px solid red;
+}
+#gift{
+    display: flex;
+    background-color: rgb(249, 210, 217);
+}
+#image>img{
+    height: 100px;
+}
+#image+div{
+    margin-left: 5px;
+}
+#order>div{
+    display: flex;
+    justify-content: space-between;
+}
+#order+button{
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    border: none;
+    background-color: red;
+}
+
+
+
+/* item css */
+#product>div{
+    /* display: flex; */
+    /* height: auto; */
+    /* padding: 5px; */
+    display: flex;
+    border: 1px solid grey;
+    
+}
+#product>div>div{
+    margin-left: 15px;
+}
+#product>div>div>img{
+    width: 100%;
+    height: 150px;
+}
