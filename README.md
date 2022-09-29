@@ -19,7 +19,7 @@
     <a href="#Getting-Started">Getting Started</a> &#10023; <a href="#Setup">Setup</a> &#10023;    
     <a href="#Contributors">Contributors</a> &#10023;
   </p>
- ### Myntra is an Indian fashion e-commerce company headquartered in Bengaluru, Karnataka, India. The company was founded in 2007 to sell personalized gift items. In May 2014, Myntra.com was acquired by Flipkart. Established by Mukesh Bansal along with Ashutosh Lawania and Vineet Saxena; Myntra sold on-demand personalized gift items.
+ Myntra is an Indian fashion e-commerce company headquartered in Bengaluru, Karnataka, India. The company was founded in 2007 to sell personalized gift items. In May 2014, Myntra.com was acquired by Flipkart. Established by Mukesh Bansal along with Ashutosh Lawania and Vineet Saxena; Myntra sold on-demand personalized gift items.
       Myntra is a one stop shop for all your fashion and lifestyle needs. Being India's largest e-commerce store for fashion and lifestyle products, Myntra aims at providing a hassle free and enjoyable shopping experience to shoppers across the country with the widest range of brands and products on its portal.
 
 <br />
@@ -36,13 +36,6 @@
 - Featured products
 
 <br/>
-
-## Glimpse of our website
-
-![Home]([https://user-images.githubusercontent.com/101393298/190655740-f48093f3-2f96-483b-a98d-73a330e89c4d.png](https://luminous-cocada-0f0885.netlify.app/men.html))
-![MensProduct]([https://user-images.githubusercontent.com/101393298/190655502-9723f3a2-91f6-42c9-aa74-5121fcd52bb2.png](https://luminous-cocada-0f0885.netlify.app/mensproduct.html))
-
-
 
 
 
